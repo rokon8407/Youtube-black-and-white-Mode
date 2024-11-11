@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Black & White",
+    "version": "1.0",
+    "description": "This Chrome extension makes Youtube appear in black and white.",
+    "permissions": [
+      "scripting"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "css": ["styles.css"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
